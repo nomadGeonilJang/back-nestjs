@@ -9,3 +9,16 @@
 $ npm i -g @nestjs/cli
 $ nest new project-name
 ```
+
+2. 시작하기
+```bash
+npm run start:dev
+```
+3. 컨트롤러 만들기
+```bash
+nest g co 
+```
+## controller
+1. url을 통해 service를 호출 하는 곳
+## service
+1. 비즈니스 로직이 있는 곳

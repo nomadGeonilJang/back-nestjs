@@ -4,3 +4,8 @@
 
 ## installing
 1. 설치 하기
+
+```bash
+$ npm i -g @nestjs/cli
+$ nest new project-name
+```

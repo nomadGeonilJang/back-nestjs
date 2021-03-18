@@ -22,3 +22,6 @@ nest g co
 1. url을 통해 service를 호출 하는 곳
 ## service
 1. 비즈니스 로직이 있는 곳
+
+## single-responsibility principle
+1. 하나만 책임지자!

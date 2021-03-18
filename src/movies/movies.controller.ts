@@ -6,6 +6,7 @@ import {
   Param,
   Patch,
   Post,
+  Query,
 } from '@nestjs/common';
 
 @Controller('movies') //base path
@@ -13,6 +14,11 @@ export class MoviesController {
   @Get()
   getAll() {
     return 'this is return all movies';
+  }
+
+  @Get('/search')
+  search(@Query('year') year: string) {
+    return 'we are searching with title ->' + year;
   }
 
   @Get('/:id')
@@ -33,7 +39,10 @@ export class MoviesController {
   }
 
   @Patch('/:id')
-  patch(@Param('id') movieId: string) {
-    return `this is patch ${movieId}`;
+  patch(@Param('id') movieId: string, @Body() updateData) {
+    return {
+      movieId,
+      updateData,
+    };
   }
 }
